@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletronica</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+    <div class="father">
+        <div class="urna">
+            <div class="tela">
+                <div class="candidato">
+                    <div class="dados">
+                        <div class="dados1"><span>SEU VOTO PARA</span></div>
+                        <div class="dados2"><span>VEREADOR</span></div>
+                        <div class="dados3">
+                            <div class="dig-numb piscar"></div>
+                            <div class="dig-numb"></div>
+
+                        </div>
+                        <div class="dados4">
+                            Nome: Nelsinho Trab <br>
+                            Partido: PENI <br>
+                            Vice: Blubson Coquinhos
+                        </div>
+                    </div>
+                    <div class="fotos">
+                        <div class="imgs">
+                            <img src="img/Claytinho_88.png" alt="Candidato" />
+                            Prefeito
+                        </div>
+                        <div class="imgs vice">
+                            <img src="img/Leitoso_88_2.png" alt="Candidato" />
+                            Vice-Prefeito
+                        </div>
+                    </div>
+                </div>
+                <div class="aviso">
+                    <b>Aperte a tecla:</b> </br>
+                    CONFIRMA para CONFIRMAR o seu voto </br>
+                    CORRIGE para CORRIGIR o seu voto
+                </div>
+            </div>
+
+            <div class="teclado">
+                <div class="linha-teclado">
+                    <div class="number" onclick="clicou('7')">7</div>
+                    <div class="number" onclick="clicou('8')">8</div>
+                    <div class="number"  onclick="clicou('9')">9</div>
+                </div>
+                <div class="linha-teclado">
+                    <div class="number"  onclick="clicou('4')">4</div>
+                    <div class="number"  onclick="clicou('5')">5</div>
+                    <div class="number"  onclick="clicou('6')">6</div>
+                </div>
+                <div class="linha-teclado">
+                    <div class="number"  onclick="clicou('1')">1</div>
+                    <div class="number"  onclick="clicou('2')">2</div>
+                    <div class="number"  onclick="clicou('3')">3</div>
+                </div>
+                <div class="linha-teclado">
+                    <div class="number"  onclick="clicou('0')">0</div>
+                </div>
+
+                <div class="linha-teclado-2">
+                    <div class="number act branco" onclick="branco()">BRANCO</div>
+                    <div class="number act corrige" onclick="corrige()">CORRIGE</div>
+                    <div class="number act confirma" onclick="confirma()">CONFIRMA</div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="Js/etapas.js"></script>
+        <script src="Js/script.js"></script>
+</body>
+
+</html>
